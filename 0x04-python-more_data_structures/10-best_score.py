@@ -1,14 +1,9 @@
 #!/usr/bin/python3
-def best_score(a_dictionary):
-    if a_dictionary is None or len(a_dictionary) is 0:
-        return None
-    one_loop = True
-    for people in a_dictionary:
-        if one_loop:
-            best = people
-            score = a_dictionary[people]
-            one_loop = False
-        if a_dictionary[people] > score:
-            score = a_dictionary[people]
-            best = people
-    return(best)
+def best_score(my_dict):
+    if my_dict and len(my_dict):
+        max = list(my_dict.keys())[0]
+        for key in my_dict:
+            if my_dict[key] > my_dict[max]:
+                max = key
+        return max
+    return None
