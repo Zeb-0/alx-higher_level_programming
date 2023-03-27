@@ -235,4 +235,4 @@ About:
 * It is strongly advised to either use `setbuf(stdout, NULL);` or `fflush(stdout)` in your C functions IF you choose to use `printf`. The reason to that is that Pythons `print` and `libC`s `printf` don’t share the same buffer, and the output can appear disordered.
 
 
-#Author : Zeberio Morande [morandezeb@gmail.com](https://github.com/Zeb-0)
+## Author : Zeberio Morande [GitHub](https://github.com/Zeb-0)
