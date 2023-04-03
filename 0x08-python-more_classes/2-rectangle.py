@@ -14,7 +14,7 @@ class Rectangle:
             ValueError: if value is less than 0.
         '''
 
-    @propery
+    @property
     def width(self):
         ''' get the method to retrieve width attribute'''
         return self.__width
