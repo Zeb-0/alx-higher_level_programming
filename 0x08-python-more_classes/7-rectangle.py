@@ -16,7 +16,7 @@ class Rectangle:
 
     def __init__(self, width = 0, height = 0):
         ''' initialize instances of Rectangle
-         Parameters:
+         Args:
             width(int): rectangle width
             height(int): rectangle height
         Raises:
@@ -36,7 +36,7 @@ class Rectangle:
     @width.setter
     def width(self, value):
         '''set the width attribute'''
-        if type(value) != int:
+        if not isinstance(value, int):
             raise TypeError("width must be an integer")
         if value < 0:
             raise ValueError("width must be >= 0")
@@ -50,7 +50,7 @@ class Rectangle:
 
     @height.setter
     def height(self, value):
-        if type(value)!= int:
+        if not isinstance(value, int):
             raise TypeError("height must be an integer")
         if value < 0:
             raise ValueError("height must be >= 0")
@@ -63,22 +63,22 @@ class Rectangle:
     def perimeter(self):
         '''calculate rectangle perimeter'''
         if self.__width == 0 or self.__height == 0:
-            return 0
+            return (0)
         else:
-            return 2 * (self.__width + self.__height)
+            return (2 * (self.__width + self.__height))
 
     def __str__(self):
         '''returns a printable representation of rectangle using '#' '''
 
         if self.__width == 0 or self.__height == 0:
-            return ""
+            return ("")
         else:
-            rectangle = ""
-            for i in range(self.__height):
-                for j in range(self.__width):
-                    rectangle += "#"
-                rectangle += "\n"
-            return rectangle[:-1]
+            rect = []
+        for i in range(self.__height):
+            [rect.append(str(self.print_symbol)) for j in range(self.__width)]
+            if i != self.__height - 1:
+                rect.append("\n")
+        return ("".join(rect))
 
     def __repr__(self):
         '''return string rep of rectangle'''
