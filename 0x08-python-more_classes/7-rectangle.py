@@ -14,7 +14,7 @@ class Rectangle:
     number_of_instances = 0
     print_symbol = "#"
 
-    def __init__(self, width = 0, height = 0):
+    def __init__(self, width=0, height=0):
         ''' initialize instances of Rectangle
          Args:
             width(int): rectangle width
@@ -23,7 +23,6 @@ class Rectangle:
             TypeError: if type entered is not integer
             ValueError: if value entered is less than 0
         '''
- 
         self.width = width
         self.height = height
         Rectangle.number_of_instances += 1

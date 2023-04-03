@@ -5,7 +5,7 @@
 
 class Rectangle:
     '''rep rectangle class'''
-    def __init__(self, width = 0, height = 0):
+    def __init__(self, width=0, height=0):
         '''initialize the rectangle instances
         Parameters:
             width(int): rectangle width
@@ -40,7 +40,7 @@ class Rectangle:
 
     @height.setter
     def height(self, value):
-        if type(value)!= int:
+        if type(value) != int:
             raise TypeError("height must be an integer")
         if value < 0:
             raise ValueError("height must be >= 0")
@@ -73,7 +73,7 @@ class Rectangle:
     def __repr__(self):
         '''return string rep of rectangle'''
         return 'Rectangle({}, {})'.format(self.width, self.height)
-    
+
     def __del__(self):
         '''print message when an instance of Rectangle is deleted'''
         print("Bye rectangle...")

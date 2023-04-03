@@ -7,7 +7,7 @@ class Rectangle:
     '''rep the class Rectangle'''
     number_of_instances = 0
 
-    def __init__(self, width = 0, height = 0):
+    def __init__(self, width=0, height=0):
         ''' initialize instances of Rectangle
          Parameters:
             width(int): rectangle width
@@ -16,7 +16,7 @@ class Rectangle:
             TypeError: if type entered is not integer
             ValueError: if value entered is less than 0
         '''
- 
+
         self.width = width
         self.height = height
         Rectangle.number_of_instances += 1
@@ -43,7 +43,7 @@ class Rectangle:
 
     @height.setter
     def height(self, value):
-        if type(value)!= int:
+        if type(value) != int:
             raise TypeError("height must be an integer")
         if value < 0:
             raise ValueError("height must be >= 0")

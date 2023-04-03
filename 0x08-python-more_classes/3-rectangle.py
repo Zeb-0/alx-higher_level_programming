@@ -1,10 +1,11 @@
 #!/usr/bin/python3
 '''class Rectangle '''
 
+
 class Rectangle:
     '''create instances of Rectangle'''
 
-    def __init__(self, width = 0, height = 0):
+    def __init__(self, width=0, height=0):
         '''initialize Rectangle
 
         Parameters:
@@ -57,6 +58,7 @@ class Rectangle:
             return 0
         else:
             return 2 * (self.__width + self.__height)
+
     def __str__(self):
         '''returns a string representation of rectangle
         using '#' fot its outline

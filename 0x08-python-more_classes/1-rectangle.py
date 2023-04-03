@@ -1,11 +1,12 @@
 #!/usr/bin/python3
 
-''' defines a class Rectangle'''
+'''defines a class Rectangle'''
+
 
 class Rectangle:
     ''' defines Rectangle by its dimensions '''
 
-    def __init__(self, width = 0, height = 0):
+    def __init__(self, width=0, height=0):
         ''' initializing instances of Rectangle
         Args:
             width: rectangle width
@@ -28,7 +29,6 @@ class Rectangle:
     @width.setter
     def width(self, value):
         ''' set the width attribute '''
-
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
         if value < 0:

@@ -2,9 +2,10 @@
 
 '''define a class Rectangle'''
 
+
 class Rectangle:
     '''rectangle'''
-    def __init__(self, width = 0, height = 0):
+    def __init__(self, width=0, height=0):
         '''initialize rectangle instances' dimensions: width and height
         parameters:
             width: retangle width

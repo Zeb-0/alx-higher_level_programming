@@ -2,9 +2,10 @@
 
 ''' define a class Rectangle '''
 
+
 class Rectangle:
     '''rectangle'''
-    def __init__(self, width = 0, height = 0):
+    def __init__(self, width=0, height=0):
         '''initialize the rectangle instances
 
         Parameters:
@@ -41,7 +42,7 @@ class Rectangle:
 
     @height.setter
     def height(self, value):
-        if type(value)!= int:
+        if type(value) != int:
             raise TypeError("height must be an integer")
         if value < 0:
             raise ValueError("height must be >= 0")
