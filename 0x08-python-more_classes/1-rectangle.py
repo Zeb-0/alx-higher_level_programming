@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-''' define a class Rectangle '''
+''' defines a class Rectangle'''
 
 class Rectangle:
     ''' defines Rectangle by its dimensions '''
