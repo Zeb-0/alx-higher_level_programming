@@ -4,7 +4,7 @@
 class Rectangle:
     '''create instances of Rectangle'''
 
-    def __init__(self, width = 0, heigth = 0):
+    def __init__(self, width = 0, height = 0):
         '''initialize Rectangle
 
         Parameters:
@@ -15,7 +15,7 @@ class Rectangle:
             ValueError: if value entered is less than 0
         '''
         self.__width = width
-        self.__height  = height
+        self.__height = height
 
     @property
     def width(self):
