@@ -13,6 +13,8 @@ class Rectangle:
             TypeError: if the size is not of type integer
             ValueError: if value is less than 0.
         '''
+        self.__width = width
+        self.__height = height
 
     @property
     def width(self):
@@ -46,11 +48,12 @@ class Rectangle:
 
     def area(self):
         '''returns the rectangle area'''
-        return (self.width * self.height)
+        return (self.__width * self.__height)
 
     def perimeter(self):
         '''calculates perimeter and returns result'''
-        if self.width == 0 or self_height == 0:
+        if self.__width == 0 or self.__height == 0:
             return 0
         else:
-            return 2 * (self.width + self.height)
+            return 2 * (self.__width + self.__height)
+
