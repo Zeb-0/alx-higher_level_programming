@@ -6,27 +6,27 @@ class Rectangle:
     """Represent a rectangle.
 
     Attributes:
-        number_of_instances (int): The number of Rectangle instances.
-        print_symbol (any): The symbol used for string representation.
+        number_of_instances: The number of Rectangle instances.
+        print_symbol: The symbol used for string representation.
     """
 
     number_of_instances = 0
     print_symbol = "#"
 
     def __init__(self, width=0, height=0):
-        """Initialize a new Rectangle.
+        """Initialize Rectangle instances.
 
         Args:
-            width (int): The width of the new rectangle.
-            height (int): The height of the new rectangle.
+            width: width of rectangle.
+            height: height of rectangle.
         """
-        type(self).number_of_instances += 1
+        Rectangle.number_of_instances += 1
         self.width = width
         self.height = height
 
     @property
     def width(self):
-        """Get/set the width of the Rectangle."""
+        """Get the width of the Rectangle."""
         return self.__width
 
     @width.setter
@@ -39,7 +39,7 @@ class Rectangle:
 
     @property
     def height(self):
-        """Get/set the height of the Rectangle."""
+        """set the height of the Rectangle."""
         return self.__height
 
     @height.setter
@@ -51,24 +51,24 @@ class Rectangle:
         self.__height = value
 
     def area(self):
-        """Return the area of the Rectangle."""
+        """Return area of Rectangle."""
         return (self.__width * self.__height)
 
     def perimeter(self):
-        """Return the perimeter of the Rectangle."""
+        """Return perimeter of Rectangle."""
         if self.__width == 0 or self.__height == 0:
             return (0)
         return ((self.__width * 2) + (self.__height * 2))
 
     @staticmethod
     def bigger_or_equal(rect_1, rect_2):
-        """Return the Rectangle with the greater area.
+        """Return Rectangle with the greater area.
 
-        Args:
-            rect_1 (Rectangle): The first Rectangle.
-            rect_2 (Rectangle): The second Rectangle.
-        Raises:
-            TypeError: If either of rect_1 or rect_2 is not a Rectangle.
+        Params:
+            rect_1 (Rectangle): instance of Rectangle.
+            rect_2 (Rectangle): instance of Rectangle.
+        Returns:
+            Rectangle: rectangle instance with the biggest area
         """
         if not isinstance(rect_1, Rectangle):
             raise TypeError("rect_1 must be an instance of Rectangle")
@@ -83,12 +83,12 @@ class Rectangle:
         """Return a new Rectangle with width and height equal to size.
 
         Args:
-            size (int): The width and height of the new Rectangle.
+            size: The width and height of the new Rectangle.
         """
         return (cls(size, size))
 
     def __str__(self):
-        """Return the printable representation of the Rectangle.
+        """Return printable representation of the Rectangle.
 
         Represents the rectangle with the # character.
         """
@@ -109,6 +109,6 @@ class Rectangle:
         return (rect)
 
     def __del__(self):
-        """Print a message for every deletion of a Rectangle."""
+        """Print message for every instance deletion"""
         type(self).number_of_instances -= 1
         print("Bye rectangle...")
