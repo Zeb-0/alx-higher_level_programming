@@ -7,7 +7,7 @@ class Rectangle:
     '''rep the class Rectangle'''
     number_of_instances = 0
 
-    def __init__(self):
+    def __init__(self, width = 0, heigth = 0):
         ''' initialize instances of Rectangle
          Parameters:
             width(int): rectangle width
