@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 #!/usr/bin/python3
 
 ''' defines a class Rectangle'''
@@ -51,4 +49,3 @@ class Rectangle:
             if value < 0:
                 raise ValueError("height must be >= 0")
             self.__height = value
->>>>>>> 4ec57829e42beff9bcffc36c3c71a4ecccda2e2a
