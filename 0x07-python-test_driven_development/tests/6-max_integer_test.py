@@ -68,5 +68,9 @@ class TestMaxInteger(unittest.TestCase):
         with self.assertRaises(TypeError):
             max_integer([1, 'apple', 3.7, -4, 5])
 
+    def test_empty_string(self):
+        """Test an empty string."""
+        self.assertEqual(max_integer(""), None)
+
 if __name__ == '__main__':
     unittest.main()
