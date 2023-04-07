@@ -1,9 +1,10 @@
 2-matrix_divided.py
-
+--------------------
 
 This module defines a function that carries out a matrix division
 
 Usage:
+------
 
 
 It takes in two parameters "matrix" and "div" and returns a new matrix after division
@@ -13,26 +14,27 @@ It takes in two parameters "matrix" and "div" and returns a new matrix after div
 	>>> matrix = [
 	...	[2, 6, 8],
 	...	[10, 22, 12]
-	...]
+	... ]
+
 	>>> print(matrix_divided(matrix, 2))
 	[[1.0, 3.0, 4.0], [5.0, 11.0, 6.0]]
 
 Return new matrix in two decimal places.
 
 
-	>>>  matrix = [
-	...     [1, 2, 3],
+	>>> matrix = [
+	...	[1, 2, 3],
         ...     [4, 5, 6]
         ... ]
         >>> print(matrix_divided(matrix, 3))
-        [[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
+        [[0.67, 2.0, 2.67], [3.33, 7.33, 4.0]]
 
 
 Doesn't change the original:
 
 
 	>>> print(matrix)
-	[[1, 2, 3], [4, 5, 6]]
+	[[2, 6, 8], [01, 22, 12]]
 
 Handle both floats and integers:
 
@@ -42,7 +44,7 @@ Handle both floats and integers:
 	...	[17, -6.4, 8.128, 20]
 	... ]
 	>>> print(matrix_divided(matrix, 2))
-	[[1.00, 15.00, 1.20, 3.50], [8.50, -3.20, 4.06, 10.00]]
+	[[1.0, 15.0, 1.2, 3.5], [8.5, -3.2, 4.06, 10.0]]
 
 Handle floats
 
@@ -52,7 +54,7 @@ Handle floats
         ...     [4.4, 5.4, -6.9]
         ... ]
         >>> print(matrix_divided(matrix, 3))
-        [[0.37, -0.87, 1.1], [1.47, 1.80, -2.3]]
+        [[0.37, -0.87, 1.1], [1.47, 1.8, -2.3]]
 
 Handle empty matrix:
 
@@ -102,7 +104,7 @@ Handle non-numbers:
 
 	>>> matrix = [
         ...     [1, 2, 'three'],
-        ...     [4, x, 6]
+        ...     [4, 'x', 6]
         ... ]
         >>> print(matrix_divided(matrix, 3))
         Traceback (most recent call last):
