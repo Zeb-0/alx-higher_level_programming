@@ -17,8 +17,7 @@ if no_last name is provided print empty string:
 
 	>>> say_my_name('Morande')
 	My name is Morande
-
-
+	
 Unacceptable Names:
 ********************
 
