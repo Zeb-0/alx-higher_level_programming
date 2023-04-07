@@ -18,8 +18,8 @@ and ``:``.
 no spaces at beginning of line:
 
 	>>> text_indentation("   Hi there.")
-    Hi there.
-    <BLANKLINE>
+	Hi there.
+	<BLANKLINE>
 
 
 No spaces at end of line:
