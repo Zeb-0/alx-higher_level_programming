@@ -51,7 +51,7 @@ sum an integer and a string (a = 2 and = 'abracadabra')
 	TypeError: b must be an integer
 
 Pass no arguments into the function
-	>>> add_integer()
+	>>> add_integer(None)
 	Traceback (most recent call last):
                 ...
 	TypeError: a must be an integer
