@@ -27,14 +27,14 @@ Return new matrix in two decimal places.
         ...     [4, 5, 6]
         ... ]
         >>> print(matrix_divided(matrix, 3))
-        [[0.67, 2.0, 2.67], [3.33, 7.33, 4.0]]
+        [[0.33, 0.67, 1.0], [1.33, 1.67, 2.0]]
 
 
 Doesn't change the original:
 
 
 	>>> print(matrix)
-	[[2, 6, 8], [10, 22, 12]]
+	[[1, 2, 3],[4, 5, 6]]
 
 Handle both floats and integers:
 
