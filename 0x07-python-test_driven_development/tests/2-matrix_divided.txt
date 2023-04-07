@@ -57,7 +57,7 @@ Handle floats
 Handle empty matrix:
 
 
-	>>> >>> matrix = [[]]
+	>>> matrix = [[]]
         >>> print(matrix_divided(matrix, 3))
         [[]]
 
@@ -112,7 +112,7 @@ Handle non-numbers:
 Handle different row sizes using new TypeError:
 
 
-	>>> >>> matrix = [
+	>>> matrix = [
         ...     [1, 2, 3, 4],
         ...     [5, 6, 7]
         ... ]
@@ -129,7 +129,7 @@ Handle Invalid Divisors:
 
 case 1: passing a string:
 
-	>>> >>> matrix = [
+	>>> matrix = [
         ...     [1, 2, 3],
         ...     [4, 5, 6]
         ... ]
@@ -140,7 +140,7 @@ case 1: passing a string:
 
 case 2: passing nothing:
 
-	>>> >>> print(matrix_divided(matrix, None))
+	>>> print(matrix_divided(matrix, None))
         Traceback (most recent call last):
         TypeError: div must be a number
 
