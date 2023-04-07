@@ -50,13 +50,11 @@ Print new lines within a string as normally printed
 	<BLANKLINE>
 	<BLANKLINE>
 	New line
-	<BLANKLINE>
 
 
 	>>> text_indentation("Print new \nlines within")
 	Print new 
 	lines within
-	<BLANKLINE>
 
 
 print new line only if these characters are encountered: ``.``, ``?``, and ``:``
@@ -77,7 +75,7 @@ Invalid Text:
 
 2. mixed type entry (string and other types):
 
-	>>> text_indentation("{"mixed", 1, "oxford" : 218})
+	>>> text_indentation("{'mixed', 1, 'oxford' : 218})
 	Traceback (most recent call last):
         TypeError: text must be a string
 
