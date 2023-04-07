@@ -85,8 +85,8 @@ If not raise a TypeError.
 
 Handle an empty list:
 
-	>>>matrix = []
-	>>>print(matrix_divided(matrix, 2))
+	>>> matrix = []
+	>>> print(matrix_divided(matrix, 2))
 	Traceback (most recent call last):
         TypeError: matrix must be a matrix (list of lists) of integers/floats
 
@@ -106,6 +106,7 @@ Handle non-numbers:
         ...     [1, 2, 'three'],
         ...     [4, 'x', 6]
         ... ]
+
         >>> print(matrix_divided(matrix, 3))
         Traceback (most recent call last):
         TypeError: matrix must be a matrix (list of lists) of integers/floats
@@ -118,6 +119,7 @@ Handle different row sizes using new TypeError:
         ...     [1, 2, 3, 4],
         ...     [5, 6, 7]
         ... ]
+
         >>> print(matrix_divided(matrix, 3))
         Traceback (most recent call last):
         TypeError: Each row of the matrix must have the same size
@@ -135,6 +137,7 @@ case 1: passing a string:
         ...     [1, 2, 3],
         ...     [4, 5, 6]
         ... ]
+
         >>> print(matrix_divided(matrix, "not a number"))
         Traceback (most recent call last):
         TypeError: div must be a number
