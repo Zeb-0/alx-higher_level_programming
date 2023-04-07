@@ -46,7 +46,7 @@ Or:
 Print new lines within a string as normally printed
 
 	>>> text_indentation("print new lines normally.\nNew line")
-	"print new lines normally.
+	print new lines normally.
 	<BLANKLINE>
 	<BLANKLINE>
 	New line
