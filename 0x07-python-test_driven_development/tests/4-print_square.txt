@@ -56,3 +56,9 @@ Unacceptable Sizes:
 	>>> print_square(None)
 	Traceback (most recent call last):
         TypeError: size must be an integer
+
+must pass an argument:
+
+	>>> print_square()
+        Traceback (most recent call last):
+        TypeError: print_square() missing 1 required positional argument: 'size'
