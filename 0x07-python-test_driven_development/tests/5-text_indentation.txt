@@ -75,7 +75,7 @@ Invalid Text:
 
 2. mixed type entry (string and other types):
 
-	>>> text_indentation({'mixed', 1, 'oxford', 218)
+	>>> text_indentation({'mixed', 1, 'oxford', 218})
 	Traceback (most recent call last):
         TypeError: text must be a string
 
