@@ -16,16 +16,6 @@ def text_indentation(text):
     if not isinstance(text, str):
         raise TypeError("text must be a string")
 
-<<<<<<< HEAD
-    else:
-        for char in text:
-            if char == '.' or char == '?' or char == ':':
-                print()
-                print(char)
-                print()
-            else:
-                print(char, end='')
-=======
     n = 0  # character count
     while n < len(text) and text[n] == " ":
         n = n + 1
@@ -40,5 +30,3 @@ def text_indentation(text):
                 n = n + 1
             continue
         n = n + 1
-
->>>>>>> b878cedba1879eb18707dff7877653c0bc9bf701
