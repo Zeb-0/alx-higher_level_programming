@@ -1,0 +1,47 @@
+Using 3-say_my_name.py module
+------------------------------
+
+
+This defines a function for printing a name
+
+
+Usage:
+*******
+
+	>>> say_my_name = __import__('3-say_my_name').say_my_name
+	>>> say_my_name('Morande', 'Zeberio')
+	My name is Morande Zeberio
+
+
+if no_last name is provided print empty string:
+
+	>>> say_my_name('Morande')
+	My name is Morande
+
+
+Unacceptable Names:
+********************
+
+1. non-string:
+
+	>>> say_my_name(123, 'Zeberio')
+	Traceback (most recent call last):
+	TypeError: first_name must be a string
+
+2. passing a list:
+
+	>>> say_my_name('Morande', ['Amos', 'Kevin', 'Mapengo'])
+	Traceback (most recent call last):
+	TypeError: last_name must be a string
+
+3. passing nothing as arguments:
+
+	>>> say_my_name(None)
+	Traceback (most recent call last):
+        TypeError: first_name must be a string
+
+Must povide a name:
+
+	>>> say_my_name()
+        Traceback (most recent call last):
+        TypeError: say_my_name() missing 1 required positional argument: 'first_name'
