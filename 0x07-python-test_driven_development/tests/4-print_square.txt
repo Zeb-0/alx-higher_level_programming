@@ -1,0 +1,58 @@
+4-print_square.txt Module
+--------------------------
+
+Usage:
++++++++
+
+
+takes in 'size' as parameter for side dimensions
+prints a square using the '#' character
+
+
+	>>> print_square = __import__('4-print_square').print_square
+        >>> print_square(2)
+	##
+	##
+
+
+	>>> print_square(5)
+	#####
+	#####
+	#####
+	#####
+	#####
+
+
+Handle size of 0: prints nothing
+
+	>>> print_square(0)
+
+
+Unacceptable Sizes:
+-------------------
+
+
+1. non-integer values for size: raises TypeError:
+
+	>>> print_square('abcd')
+	Traceback (most recent call last):
+        TypeError: size must be an integer
+
+
+2. float values: TypeError:
+
+	>>> print_square(2.3)
+	Traceback (most recent call last):
+        TypeError: size must be an integer
+
+3. less than 0: ValueError:
+
+	>>> print_square(-4)
+	Traceback (most recent call last):
+	ValueError: size must be >= 0
+
+4. passing nothins to function: TypeError:
+
+	>>> print_square(None)
+	Traceback (most recent call last):
+        TypeError: size must be an integer
