@@ -1,0 +1,88 @@
+5-text_indentation.py Module
++++++++++++++++++++++++++++++
+
+
+Usage:
+------
+
+Text is printed with two new lines after each of the characters ``.``, ``?``,
+and ``:``.
+
+
+	>>> text_indentation = __import__('5-text_indentation').text_indentation
+        >>> text_indentation("Hello?")
+        Hello?
+        <BLANKLINE>
+
+
+no spaces at beginning of line:
+
+	>>> text_indentation("   Hi there.")
+    Hi there.
+    <BLANKLINE>
+
+
+No spaces at end of line:
+
+	>>> text_indentation("Spaces.   ")
+        Spaces.
+        <BLANKLINE>
+
+
+print nothing if no text is entered even if spaces are typed in.
+
+	>>> text_indentation("       ")
+
+
+Or:
+
+	>>> text_indentation("    Whatsup buudy?    You good?   ")
+        Whatsup buudy?
+        <BLANKLINE>
+        You good?
+        <BLANKLINE>
+
+
+Print new lines within a string as normally printed
+
+	>>> text_indentation("print new lines normally.\nNew line")
+	"print new lines normally.
+	<BLANKLINE>
+	<BLANKLINE>
+	New line
+	<BLANKLINE>
+
+
+	>>> text_indentation("Print new \nlines within")
+	print new 
+	lines within
+	<BLANKLINE>
+
+
+print new line only if these characters are encountered: ``.``, ``?``, and ``:``
+
+	>>> text_indentation("you suck, at this man")
+	you suck, at this man
+
+
+Invalid Text:
+--------------
+
+1. non-string: TypeError:
+
+	>>> text_indentation(45678)
+	Traceback (most recent call last):
+        TypeError: text must be a string
+
+
+2. mixed type entry (string and other types):
+
+	>>> text_indentation("{mixed' 1, "oxford" : 218})
+	Traceback (most recent call last):
+        TypeError: text must be a string
+
+3. empty string: TypeError:
+
+	>>> text_indentation(None)
+	Traceback (most recent call last):
+        TypeError: text must be a string
