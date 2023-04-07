@@ -34,7 +34,7 @@ Doesn't change the original:
 
 
 	>>> print(matrix)
-	[[2, 6, 8], [01, 22, 12]]
+	[[2, 6, 8], [10, 22, 12]]
 
 Handle both floats and integers:
 
