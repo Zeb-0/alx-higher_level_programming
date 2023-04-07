@@ -30,7 +30,7 @@ def matrix_divided(matrix, div):
                 for row in matrix
                 for item in row
             )
-        ):
+    ):
         raise TypeError("matrix must be a matrix (list of lists) of "
                         "integers/floats")
 
@@ -43,4 +43,4 @@ def matrix_divided(matrix, div):
     if div == 0:
         raise ZeroDivisionError("division by zero")
 
-    return ([list(map(lambda x: round(x / div, 2), row)) for row in matrix])        
+    return ([list(map(lambda x: round(x / div, 2), row)) for row in matrix])
