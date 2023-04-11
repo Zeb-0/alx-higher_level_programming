@@ -1,5 +1,4 @@
 # 0x0A-python-inheritance
----------------------------
 
 # Resources
 
