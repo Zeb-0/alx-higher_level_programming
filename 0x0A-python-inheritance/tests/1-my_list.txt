@@ -43,11 +43,11 @@ Test Cases:
         <bound method MyList.print_sorted of [1, 2, 3, 4]>
 
 
-7. pass multiple list arguments:
+7. pass multiple list arguments:OOB
 
 	>>> list1 = Mylist([7, 2], [8, 3], [5, 34, 6])
         Traceback (most recent call last):
-        TypeError: list() takes at most 1 argument got 3
+        TypeError: '<' not supported between instances of 'int' and 'str'
 
 8. get a sorted empty list:
 
@@ -61,7 +61,7 @@ Test Cases:
 	>>> list1 = Mylist(['axle', 456, False])
 	>>> list1.print_sorted()
 	Traceback (most recent call last):
-        TypeError: unorderable types: str() and int
+        TypeError: '<' not supported between instances of 'int' and 'str'
 
 10. pass a boolean value: Raises TypeError
 
@@ -73,7 +73,7 @@ Test Cases:
 
 	>>> list1 = Mylist((23, 4), (29, 16))
 	Traceback (most recent call last):
-        TypeError: list() takes at most 1 argument, got 2
+        TypeError: list expected at most 1 argument, got 2
 
 
 12. populate an empty list:
