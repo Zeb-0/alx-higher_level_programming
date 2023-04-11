@@ -40,14 +40,14 @@ Test Cases:
 
 6. 	>>> list1 = Mylist()
         >>> print(list1.print_sorted)
-        <bound method Mylist.print_sorted of [1, 2, 3, 4]>
+        <bound method MyList.print_sorted of [1, 2, 3, 4]>
 
 
 7. pass multiple list arguments:
 
 	>>> list1 = Mylist([7, 2], [8, 3], [5, 34, 6])
         Traceback (most recent call last):
-        TypeError: list() takes at most 1 argument (3 given)
+        TypeError: list() takes at most 1 argument (got 3)
 
 8. get a sorted empty list:
 
