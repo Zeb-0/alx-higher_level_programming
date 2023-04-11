@@ -1,8 +1,8 @@
 # 0x0A-python-inheritance
 ---------------------------
 
-#Resources
----------------------------
+# Resources
+
 ## Read or watch:
 
 * [Inheritance](https://docs.python.org/3/tutorial/classes.html#inheritance)
@@ -12,8 +12,9 @@
 
 
 # Tasks
----------------------------
-| ## 0. Lookup |
-| Write a function that returns the list of available attributes and methods of an object: | Prototype: `def lookup(obj):`
-											    | Returns a `list` object
-										            | You are not allowed to import any module
+
+## 0. Lookup
+Write a function that returns the list of available attributes and methods of an object:
+	* Prototype: `def lookup(obj):`
+	* Returns a `list` object
+	* You are not allowed to import any module
