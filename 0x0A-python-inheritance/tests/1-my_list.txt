@@ -47,7 +47,7 @@ Test Cases:
 
 	>>> list1 = Mylist([7, 2], [8, 3], [5, 34, 6])
         Traceback (most recent call last):
-        TypeError: '<' not supported between instances of 'int' and 'str'
+        TypeError: list expected at most 1 argument, got 3
 
 8. get a sorted empty list:
 
