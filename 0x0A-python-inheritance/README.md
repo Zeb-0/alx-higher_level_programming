@@ -128,7 +128,7 @@ Write a function that adds a new attribute to an object if it’s possible:
 * You are not allowed to import any module
 
 
-#Author:
---------
+# Author:
+-----------
 
-##Zeberio Morande.
+## Zeberio Morande.
