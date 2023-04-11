@@ -116,10 +116,10 @@ Write a class `Square` that inherits from `Rectangle` (`9-rectangle.py`). (task 
 
 Write a class `MyInt` that inherits from `int`:
 
-* `MyInt` is a rebel. `MyInt` has `==` and <!=> operators inverted
+* `MyInt` is a rebel. `MyInt` has `==` and `!=` operators inverted
 You are not allowed to import any module
 
-## 13. Can I?
+## [13. Can I?](https://github.com/Zeb-0/alx-higher_level_programming/blob/master/0x0A-python-inheritance/101-add_attribute.py)
 
 Write a function that adds a new attribute to an object if it’s possible:
 
