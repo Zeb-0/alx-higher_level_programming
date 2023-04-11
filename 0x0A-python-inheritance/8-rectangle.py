@@ -12,17 +12,7 @@ class Rectangle(BaseGeometry):
 
     def __init__(self, width, height):
         ''' Initialize a new rectangle instance.'''
+        self.integer_validator("width", width)
         self.__width = width
+        self.integer_validator("height", height)
         self.__height = height
-        super().__init__()
-
-    def __str__(self):
-        """Return a string representation of the rectangle."""
-        return f"[Rectangle] {self.__width}/{self.__height}"
-
-    def area(self):
-        """Compute the area of the rectangle."""
-        return self.__width * self.__height
-
-    def __repr__(self):
-        return f"Rectangle({self.__width}, {self.__height})"
