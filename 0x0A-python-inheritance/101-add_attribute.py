@@ -1,10 +1,9 @@
 #!/usr/bin/python3
+'''adds new attributes to objects if possible '''
 
-''' adds a new attribute to an object if it’s possible: '''
 
-
-def add_attributes(obj, attrib, value):
-    ''' try adding an attribute to an object '''
+def add_attribute(obj, att, value):
+    ''' try to Add a new attribute to an object '''
     if not hasattr(obj, "__dict__"):
-        raise TypeError("not possible")
+        raise TypeError("can't add new attribute")
     obj.__dict__[att] = value
