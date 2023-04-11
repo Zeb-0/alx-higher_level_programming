@@ -19,7 +19,7 @@ Test Cases:
 
      >>> BaseG = BaseGeometry(None)
      Traceback (most recent call last):
-     TypeError: object() takes no parameters
+     TypeError: BaseGeometry() takes no arguments
 
 3. call area with BaseG instance raises Exception:
 
