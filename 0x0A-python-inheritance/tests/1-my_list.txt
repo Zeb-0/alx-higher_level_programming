@@ -24,7 +24,7 @@ Test Cases:
 
 	>>> list1 = Mylist()
 	>>> type(list1)
-	<class '1-my_list.Mylist'>
+	<class '1-my_list.MyList'>
 
 4. passing a list as argument return a list:
 
@@ -38,14 +38,14 @@ Test Cases:
 	Traceback (most recent call last):
         TypeError: 'NoneType' object is not iterable
 
-6. 	>>> list1 = MyList()
+6. 	>>> list1 = Mylist()
         >>> print(list1.print_sorted)
-        <bound method MyList.print_sorted of []>
+        <bound method Mylist.print_sorted of [1, 2, 3, 4]>
 
 
 7. pass multiple list arguments:
 
-	>>> my_list = MyList([7, 2], [8, 3], [5, 34, 6])
+	>>> list1 = Mylist([7, 2], [8, 3], [5, 34, 6])
         Traceback (most recent call last):
         TypeError: list() takes at most 1 argument (3 given)
 
