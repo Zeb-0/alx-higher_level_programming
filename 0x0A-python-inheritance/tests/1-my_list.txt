@@ -1,0 +1,106 @@
+1-my_list Module
+---------------------
+
+Usage:
+------
+
+	>>> MyList = __import__('1-my_list').MyList
+
+
+Test Cases:
+************
+
+1: function call should give empty list'
+
+	>>> Mylist()
+	[]
+
+2. check if is a subclass:
+
+	>>> issubclass(Mylist, list)
+	True
+
+3. check for type:
+
+	>>> list1 = Mylist()
+	>>> type(list1)
+	<class '1-my_list.Mylist'>
+
+4. passing a list as argument return a list:
+
+	>>> list1 = Mylist([1, 2, 3, 4])
+	>>> print(list1)
+	[1, 2, 3, 4]
+
+5. passing nothing should raisen a TypeError:
+
+	>>> list1 = Mylist(None)
+	Traceback (most recent call last):
+        TypeError: 'NoneType' object is not iterable
+
+6. 	>>> list1 = MyList()
+        >>> print(list1.print_sorted)
+        <bound method MyList.print_sorted of []>
+
+
+7. pass multiple list arguments:
+
+	>>> my_list = MyList([7, 2], [8, 3], [5, 34, 6])
+        Traceback (most recent call last):
+        TypeError: list() takes at most 1 argument (3 given)
+
+8. get a sorted empty list:
+
+	>>> list1 = Mylist()
+	>>> list1.print_sorted()
+	[]
+
+
+9. passing mixed types into Mylist(): raise TypeError
+
+	>>> list1 = Mylist(['axle', 456, False])
+	>>> list1.print_sorted()
+	Traceback (most recent call last):
+        TypeError: unorderable types: str() < int()
+
+10. pass a boolean value: Raises TypeError
+
+	>>> list1 = Mylist(False)
+	Traceback (most recent call last):
+	TypeError: 'bool' object is not iterable
+
+11. pass a tuple:
+
+	>>> list1 = Mylist((23, 4), (29, 16))
+	Traceback (most recent call last):
+        TypeError: list() takes at most 1 argument (2 given)
+
+
+12. populate an empty list:
+
+	>>> list1 = Mylist()
+	>>> list1.append(5)
+	>>> list1.append(4)
+	>>> list1.append(7)
+	>>> list1.append(8)
+	>>> print(list1)
+	[5, 4, 7, 8]
+
+
+13. sort the list:
+
+	>>> list1.print_sorted()
+	[4, 5, 7, 8]
+
+
+14. remove a value from the list:
+
+	>>> list1.remove(5)
+	>>> print(list1)
+	[4, 7, 8]
+
+15. replace a value using indexing format:
+
+	>>> list1[2] = 6
+	>>> print(list1)
+	[4, 7, 6]
