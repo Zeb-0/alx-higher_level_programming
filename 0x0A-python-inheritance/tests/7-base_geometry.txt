@@ -1,0 +1,96 @@
+7-base_geometry.py module
+-------------------------
+
+Usage:
+******
+     >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+
+Test Cases:
+-----------
+
+1. Get the type:
+
+     >>> BaseG = BaseGeometry()
+     >>> type(BaseG)
+     <class '7-base_geometry.BaseGeometry'>
+
+2. passing nothing raies TypeError:
+
+     >>> BaseG = BaseGeometry(None)
+     Traceback (most recent call last):
+     TypeError: object() takes no parameters
+
+3. call area with BaseG instance raises Exception:
+
+     >>> BaseG.area()
+     Traceback (most recent call last):
+     Exception: area() is not implemented
+
+4. passing no arguments when calling bg.integer_validator():
+
+     >>> BaseG.integer_validator()
+     Traceback (most recent call last):
+     TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
+
+5.
+     >>> BaseG.integer_validator(None)
+     Traceback (most recent call last):
+     TypeError: integer_validator() missing 1 required positional argument: 'value'
+
+6. passing 0 for second parameter raises valueError
+
+     >>> BaseG.integer_validator("testing", 0)
+     Traceback (most recent call last):
+     ValueError: testing must be greater than 0
+
+7. passing onlr one parameter
+
+     >>> BaseG.integer_validator("testing")
+     Traceback (most recent call last):
+     TypeError: integer_validator() missing 1 required positional argument: 'value'
+
+8. passing a string intead of integer value:
+
+     >>> BaseG.integer_validator("testing", "test")
+     Traceback (most recent call last):
+     TypeError: testing must be an integer
+
+9. passing a bool:
+
+     >>> BaseG.integer_validator("testing", True)
+     Traceback (most recent call last):
+     TypeError: testing must be an integer
+
+10. passing a negative:
+
+     >>> BaseG.integer_validator("testing", -7)
+     Traceback (most recent call last):
+     ValueError: testing must be greater than 0
+
+11. passing a tuple:
+
+     >>> BaseG.integer_validator("testing", (7, 9))
+     Traceback (most recent call last):
+     TypeError: testing must be an integer
+
+12. passing a list:
+
+     >>> BaseG.integer_validator("testing", [7])
+     Traceback (most recent call last):
+     TypeError: testing must be an integer
+     
+13. pass a dictionary:
+
+     >>> BaseG.integer_validator("testing", {7, 8})
+     Traceback (most recent call last):
+     TypeError: testing must be an integer
+
+14. passsing a float:
+
+     >>> BaseG.integer_validator("testing", 7.7)
+     Traceback (most recent call last):
+     TypeError: testing must be an integer
+
+15. 
+     >>> BaseG.integer_validator("testing", 9)
