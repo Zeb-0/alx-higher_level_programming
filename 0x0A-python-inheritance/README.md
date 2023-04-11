@@ -12,7 +12,7 @@
 
 # Tasks
 
-## 0. Lookup
+## [0. Lookup](https://github.com/Zeb-0/alx-higher_level_programming/blob/master/0x0A-python-inheritance/0-lookup.py)
 Write a function that returns the list of available attributes and methods of an object:
 
 * Prototype: `def lookup(obj):`
@@ -20,7 +20,7 @@ Write a function that returns the list of available attributes and methods of an
 * You are not allowed to import any module
 
 
-## 1. My list
+## [1. My list](https://github.com/Zeb-0/alx-higher_level_programming/blob/master/0x0A-python-inheritance/1-my_list.py)
 
 Write a class `MyList` that inherits from `list`:
 
@@ -29,7 +29,7 @@ Write a class `MyList` that inherits from `list`:
 * You are not allowed to import any module
 
 
-## 2. Exact same object
+## [2. Exact same object](https://github.com/Zeb-0/alx-higher_level_programming/blob/master/0x0A-python-inheritance/2-is_same_class.py)
 
 Write a function that returns `True` if the object is exactly an instance of the specified class ; otherwise `Fals`.
 
@@ -37,34 +37,34 @@ Write a function that returns `True` if the object is exactly an instance of the
 * You are not allowed to import any module
 
 
-## 3. Same class or inherit from
+## [3. Same class or inherit from](https://github.com/Zeb-0/alx-higher_level_programming/blob/master/0x0A-python-inheritance/3-is_kind_of_class.py)
 
 Write a function that returns `True` if the object is an instance of, or if the object is an instance of a class that inherited from, the specified class ; otherwise `False`.
 
 * Prototype: `def is_kind_of_class(obj, a_class):`
 * You are not allowed to import any module
 
-## 4. Only sub class of
+## [4. Only sub class of](https://github.com/Zeb-0/alx-higher_level_programming/blob/master/0x0A-python-inheritance/4-inherits_from.py)
 
 Write a function that returns `True` if the object is an instance of a class that inherited (directly or indirectly) from the specified class ; otherwise `False`.
 
 * Prototype: `def inherits_from(obj, a_class):`
 * You are not allowed to import any module
 
-## 5. Geometry module
+## [5. Geometry module](https://github.com/Zeb-0/alx-higher_level_programming/blob/master/0x0A-python-inheritance/5-base_geometry.py)
 
 Write an empty class `BaseGeometry`.
 
 * You are not allowed to import any module
 
-## 6. Improve Geometry
+## [6. Improve Geometry](https://github.com/Zeb-0/alx-higher_level_programming/blob/master/0x0A-python-inheritance/6-base_geometry.py)
 
 Write a class `BaseGeometry` (based on `5-base_geometry.py`).
 
 * Public instance method: `def area(self):` that raises an `Exception` with the message `area() is not implemented`
 * You are not allowed to import any module
 
-## 7. Integer validator
+## [7. Integer validator](https://github.com/Zeb-0/alx-higher_level_programming/blob/master/0x0A-python-inheritance/7-base_geometry.py)
 
 Write a class `BaseGeometry` (based on `6-base_geometry.py`).
 
@@ -75,7 +75,7 @@ Write a class `BaseGeometry` (based on `6-base_geometry.py`).
 	- if `value` is less or equal to 0: raise a `ValueError` exception with the message `<name> must be greater than 0`
 - You are not allowed to import any module
 
-## 8. Rectangle
+## [8. Rectangle](https://github.com/Zeb-0/alx-higher_level_programming/blob/master/0x0A-python-inheritance/8-rectangle.py)
 
 Write a class `Rectangle` that inherits from `BaseGeometry` (`7-base_geometry.py`).
 
@@ -83,7 +83,7 @@ Write a class `Rectangle` that inherits from `BaseGeometry` (`7-base_geometry.py
 	* `width` and `height` must be private. No getter or setter
 	* `width` and `height` must be positive integers, validated by `integer_validator`
 
-## 9. Full rectangle
+## [9. Full rectangle](https://github.com/Zeb-0/alx-higher_level_programming/blob/master/0x0A-python-inheritance/9-rectangle.py)
 
 Write a class `Rectangle` that inherits from `BaseGeometry` (`7-base_geometry.py`). (`task based on 8-rectangle.py`)
 
@@ -93,7 +93,7 @@ Write a class `Rectangle` that inherits from `BaseGeometry` (`7-base_geometry.py
 - the `area()` method must be implemented
 * `print()` should print, and `str()` should return, the following rectangle description: `[Rectangle] <width>/<height>`
 
-## 10. Square #1
+## [10. Square #1](https://github.com/Zeb-0/alx-higher_level_programming/blob/master/0x0A-python-inheritance/10-square.py)
 
 Write a class `Square` that inherits from `Rectangle` (`9-rectangle.py`):
 
@@ -102,7 +102,7 @@ Write a class `Square` that inherits from `Rectangle` (`9-rectangle.py`):
 	- `size` must be a positive integer, validated by `integer_validator`
 * the `area()` method must be implemented
 
-## 11. Square #2
+## [11. Square #2](https://github.com/Zeb-0/alx-higher_level_programming/blob/master/0x0A-python-inheritance/11-square.py)
 
 Write a class `Square` that inherits from `Rectangle` (`9-rectangle.py`). (task based on `10-square.py`).
 
@@ -112,7 +112,7 @@ Write a class `Square` that inherits from `Rectangle` (`9-rectangle.py`). (task 
 * the `area()` method must be implemented
 * `print()` should print, and `str()` should return, the square description: `[Square] <width>/<height>`
 
-## 12. My integer
+## [12. My integer](https://github.com/Zeb-0/alx-higher_level_programming/blob/master/0x0A-python-inheritance/100-my_int.py)
 
 Write a class `MyInt` that inherits from `int`:
 
@@ -126,3 +126,9 @@ Write a function that adds a new attribute to an object if it’s possible:
 * Raise a `TypeError` exception, with the message `can't add new attribute` if the object can’t have new attribute
 * You are not allowed to use `try/except`
 * You are not allowed to import any module
+
+
+#Author:
+--------
+
+##Zeberio Morande.
