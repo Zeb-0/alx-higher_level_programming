@@ -47,7 +47,7 @@ Test Cases:
 
 	>>> list1 = Mylist([7, 2], [8, 3], [5, 34, 6])
         Traceback (most recent call last):
-        TypeError: list() takes at most 1 argument (got 3)
+        TypeError: list() takes at most 1 argument got 3
 
 8. get a sorted empty list:
 
@@ -61,7 +61,7 @@ Test Cases:
 	>>> list1 = Mylist(['axle', 456, False])
 	>>> list1.print_sorted()
 	Traceback (most recent call last):
-        TypeError: unorderable types: str() < int()
+        TypeError: unorderable types: str() and int
 
 10. pass a boolean value: Raises TypeError
 
@@ -73,7 +73,7 @@ Test Cases:
 
 	>>> list1 = Mylist((23, 4), (29, 16))
 	Traceback (most recent call last):
-        TypeError: list() takes at most 1 argument (2 given)
+        TypeError: list() takes at most 1 argument, got 2
 
 
 12. populate an empty list:
