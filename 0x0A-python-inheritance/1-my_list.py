@@ -11,4 +11,4 @@ class MyList(list):
         '''prints list in ascending order
         '''
         sorted_list = sorted(self)
-        pint(sorted_list)
+        print(sorted_list)
