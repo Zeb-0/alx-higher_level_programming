@@ -6,6 +6,5 @@
 def append_write(filename="", text=""):
     ''' returns the number of characters added: '''
 
-    with open(filename, 'a' encoding='utf-8') as fname:
-        fname.write(text)
-        return len(text)
+    with open(filename, 'a', encoding='utf-8') as fname:
+        return fname.write(text)
