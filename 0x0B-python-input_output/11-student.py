@@ -1,3 +1,8 @@
+#!/usr/bin/python3
+
+''' class Student that defines a student '''
+
+
 class Student:
     """
     Represents a student with first name, last name, and age.
