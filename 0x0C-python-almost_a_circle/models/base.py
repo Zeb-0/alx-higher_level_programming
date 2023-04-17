@@ -113,3 +113,67 @@ class Base:
                 return [cls.create(**d) for d in list_dicts]
         except IOError:
             return []
+
+    @classmethod
+    def draw(list_rectangles, list_squares):
+        ''' use turtle module to draw rectangle and square
+
+        params:
+            list_rectangles : rectangle list objects
+            list_squares: square list objects
+        '''
+        ttl = turtle.Turtle()
+        ttl = screen.bgcolor('#b9332c')
+        ttl.pensize(3)
+        ttl.shape('turtle')
+
+        ttl.color('ffffff')
+        for rec in list_rectangles:
+            ttl.showturtles()
+            ttl.up()
+            ttl.goto(rec.x, rec.y)
+            ttl.down()
+
+            for i in range(2):
+                ttl.forward(rec.width)
+                ttl.left(90)
+                ttl.forward(rec.height)
+                ttl.left(90)
+            ttl.hideturtle()
+
+        ttl.color('#A52A2A')
+        for sq in list_squares:
+            ttl.showturtle()
+            ttl.up()
+            ttl.goto(sq.x, sq.y)
+            ttl.down()
+            for i in range(2):
+                ttl.forward(sq.width)
+                ttl.left(90)
+                ttl.forward(sq.height)
+                ttl.left(90)
+            ttl.hideturtle()
+
+        tutle.exitonclick()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
