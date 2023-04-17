@@ -2,6 +2,7 @@
 
 ''' defines a class Base '''
 import os
+import turtle
 import csv
 import json
 
@@ -155,25 +156,3 @@ class Base:
             ttl.hideturtle()
 
         tutle.exitonclick()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
