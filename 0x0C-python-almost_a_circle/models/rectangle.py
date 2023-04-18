@@ -108,7 +108,7 @@ class Rectangle(Base):
 
     def update(self, *args, **kwargs):
         ''' assigns arguments to each attribute '''
-        if args and len(args) is not 0:
+        if args and len(args) != 0:
             ag = 0
             for i in args: # i reps an argument
                 if ag == 0:
@@ -126,7 +126,7 @@ class Rectangle(Base):
                     self.y = i
                 ag += 1
         
-        elif kwargs and len(kwargs) is not 0:
+        elif kwargs and len(kwargs) != 0:
             for key, value in kwargs.items():
                 if key == 'id':
                     if value is None:
