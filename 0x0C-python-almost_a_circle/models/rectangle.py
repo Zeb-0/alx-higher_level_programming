@@ -12,8 +12,6 @@ class Rectangle(Base):
         self.__x = x
         self.__y = y
         super().__init__(id)
-
-        
     # property getter funcs
 
     @property
@@ -35,7 +33,6 @@ class Rectangle(Base):
     def y(self):
         ''' get attribute for y '''
         return self.__y
-
 
     # setter funcs
 
