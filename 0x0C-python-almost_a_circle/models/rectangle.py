@@ -55,7 +55,7 @@ class Rectangle(Base):
             raise ValueError('width must be > 0')
 
         self.__width = value
-    
+
     @x.setter
     def x(self, value):
         ''' set value attribute for x '''
@@ -65,7 +65,7 @@ class Rectangle(Base):
             raise ValueError('x must be >= 0')
 
         self.__x = value
-    
+
     @y.setter
     def y(self, value):
         ''' set value attribute for y '''
@@ -77,8 +77,8 @@ class Rectangle(Base):
         self.__y = value
 
         def area(self):
-        ''' get rect area '''
-        return (self.__width * self.__height)
+            ''' get rect area '''
+            return (self.__width * self.__height)
 
     def display(self):
         ''' display rectangle using # '''
@@ -90,6 +90,7 @@ class Rectangle(Base):
             for col in range(self.__width):
                 print('#', end='')
             print()
+
     def __str__(self):
         ''''string representation of the class '''
         return (
@@ -121,7 +122,10 @@ class Rectangle(Base):
                 for key, value in kwargs.items():
                     if key == 'id':
                         if value is None:
-                            self.__init__(self.width, self.height, self.x, self.y)
+                            self.__init__(self.width,
+                                          self.height,
+                                          self.x,
+                                          self.y)
                         else:
                             self.id = value
                     elif key == 'width':
