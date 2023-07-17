@@ -43,7 +43,7 @@ class Rectangle(Base):
             raise TypeError("height must be an integer")
         elif value <= 0:
             raise ValueError('height must be > 0')
-        
+
         self.__height = value
 
     @width.setter
@@ -55,8 +55,6 @@ class Rectangle(Base):
             raise ValueError('width must be > 0')
 
         self.__width = value
-
-
     @x.setter
     def x(self, value):
         ''' set value attribute for x '''
@@ -66,8 +64,6 @@ class Rectangle(Base):
             raise ValueError('x must be >= 0')
 
         self.__x = value
-
-
     @y.setter
     def y(self, value):
         ''' set value attribute for y '''
@@ -77,8 +73,6 @@ class Rectangle(Base):
             raise ValueError('y must be >= 0')
 
         self.__y = value
-
-
     def area(self):
         ''' get rect area '''
         return (self.__width * self.__height)
@@ -93,21 +87,17 @@ class Rectangle(Base):
             for col in range(self.__width):
                 print('#', end='')
             print()
-
-
     def __str__(self):
         ''''string representation of the class '''
         return (
             f"[Rectangle] ({self.id}) {self.__x}/{self.__y} - "
             f"{self.__width}/{self.__height}"
         )
-
-
     def update(self, *args, **kwargs):
         ''' assigns arguments to each attribute '''
         if args and len(args) != 0:
             ag = 0
-            for i in args: # i reps an argument
+            for i in args:  # i reps an argument
                 if ag == 0:
                     if i is None:
                         self.__init__(self.width, self.height, self.x, self.y)
@@ -122,8 +112,8 @@ class Rectangle(Base):
                 elif ag == 4:
                     self.y = i
                 ag += 1
-        
-        elif kwargs and len(kwargs) != 0:
+
+            elif kwargs and len(kwargs) != 0:
             for key, value in kwargs.items():
                 if key == 'id':
                     if value is None:
@@ -142,10 +132,10 @@ class Rectangle(Base):
     def to_dictionary(self):
         ''' dictionary rep of the rectangle '''
         obj_dict = {
-            'id' : self.id,
-            'width' : self.width,
-            'height' : self.height,
-            'x' : self.x,
-            'y' : self.y
+            'id': self.id,
+            'width': self.width,
+            'height': self.height,
+            'x': self.x,
+            'y': self.y
         }
         return obj_dict
