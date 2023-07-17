@@ -2,6 +2,7 @@
 
 ''' defines a class Base '''
 import os
+import tkinter as TK
 import turtle
 import csv
 import json
