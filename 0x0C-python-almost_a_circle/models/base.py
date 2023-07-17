@@ -20,7 +20,7 @@ class Base:
 
     @staticmethod
     def to_json_string(list_dictionaries):
-        ''' returns json tring rep of a dictionary '''
+        ''' returns json string rep of a dictionary '''
         if list_dictionaries is None or list_dictionaries == []:
             return '[]'
         if (type(list_dictionaries) != list or not
