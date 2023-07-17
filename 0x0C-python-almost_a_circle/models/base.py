@@ -11,8 +11,9 @@ class Base:
     ''' class Base '''
     __nb_objects = 0
     def __init__(self, id=None):
+
         ''' new Base instance '''
-        if id != None:
+        if id is not None:
             self.id = id
         else:
             Base.__nb_objects += 1
@@ -96,7 +97,6 @@ class Base:
                 writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
                 for obj in list_objs:
                     writer.writerow(obj.to_dictionary())
-
 
     @classmethod
     def load_from_file_csv(cls):
