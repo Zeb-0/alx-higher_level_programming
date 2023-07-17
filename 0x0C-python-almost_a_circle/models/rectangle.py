@@ -55,6 +55,7 @@ class Rectangle(Base):
             raise ValueError('width must be > 0')
 
         self.__width = value
+    
     @x.setter
     def x(self, value):
         ''' set value attribute for x '''
@@ -64,6 +65,7 @@ class Rectangle(Base):
             raise ValueError('x must be >= 0')
 
         self.__x = value
+    
     @y.setter
     def y(self, value):
         ''' set value attribute for y '''
@@ -73,7 +75,8 @@ class Rectangle(Base):
             raise ValueError('y must be >= 0')
 
         self.__y = value
-    def area(self):
+
+        def area(self):
         ''' get rect area '''
         return (self.__width * self.__height)
 
@@ -93,6 +96,7 @@ class Rectangle(Base):
             f"[Rectangle] ({self.id}) {self.__x}/{self.__y} - "
             f"{self.__width}/{self.__height}"
         )
+
     def update(self, *args, **kwargs):
         ''' assigns arguments to each attribute '''
         if args and len(args) != 0:
@@ -114,20 +118,20 @@ class Rectangle(Base):
                 ag += 1
 
             elif kwargs and len(kwargs) != 0:
-            for key, value in kwargs.items():
-                if key == 'id':
-                    if value is None:
-                        self.__init__(self.width, self.height, self.x, self.y)
-                    else:
-                        self.id = value
-                elif key == 'width':
-                    self.width = value
-                elif key == 'height':
-                    self.height = value
-                elif key == 'x':
-                    self.x = value
-                elif key == 'y':
-                    self.y = value
+                for key, value in kwargs.items():
+                    if key == 'id':
+                        if value is None:
+                            self.__init__(self.width, self.height, self.x, self.y)
+                        else:
+                            self.id = value
+                    elif key == 'width':
+                        self.width = value
+                    elif key == 'height':
+                        self.height = value
+                    elif key == 'x':
+                        self.x = value
+                    elif key == 'y':
+                        self.y = value
 
     def to_dictionary(self):
         ''' dictionary rep of the rectangle '''
