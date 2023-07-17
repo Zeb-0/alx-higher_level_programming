@@ -48,10 +48,10 @@ class Square(Rectangle):
                 self.y = args[3]
             else:
                 for k, v in kwargs.items():
-                if k == "id":
-                    if type(v) != int and v is not None:
-                        raise TypeError("id must be an integer")
-                    self.id = v
+                    if k == "id":
+                        if type(v) != int and v is not None:
+                            raise TypeError("id must be an integer")
+                        self.id = v
                 if k == "size":
                     self.size = v
                 if k == "x":
