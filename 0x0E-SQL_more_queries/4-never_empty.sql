@@ -1,5 +1,5 @@
 -- creates the table id_not_null
---id_not_null description:
+-- id_not_null description:
 --	id INT with the default value 1
 --	name VARCHAR(256)
 
