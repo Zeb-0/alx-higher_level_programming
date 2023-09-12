@@ -1,6 +1,8 @@
 #!/usr/bin/node
 /**
  * Rectangle - prints the rectangle
+ * swap the deimensions
+ * double the dimensions
  */
 class Rectangle {
   constructor (w, h) {
