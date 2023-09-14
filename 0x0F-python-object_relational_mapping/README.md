@@ -51,3 +51,41 @@ Read or Watch:
 - [SQLAlchemy Tutorial](https://overiq.com/sqlalchemy-101/)
 - [Python Virtual Environments: A primer](https://realpython.com/python-virtual-environments-a-primer/)
 
+---
+
+## More Info
+### Install and activate venv
+To create a Python Virtual Environment install venv as shown below:
+```
+$ sudo apt-get install python3.8-venv
+$ python3 -m venv venv
+$ source venv/bin/activate
+```
+
+### Install `MySQLdb` module version `2.0.x`
+First install `MySQL
+
+Then:
+```
+$ sudo apt-get install python3-dev
+$ sudo apt-get install libmysqlclient-dev
+$ sudo apt-get install zlib1g-dev
+$ sudo pip3 install mysqlclient
+...
+$ python3
+>>> import MySQLdb
+>>> MySQLdb.version_info 
+(2, 0, 3, 'final', 0)
+```
+
+### Install `SQLAlchemy` module version `1.4.x`
+```
+$ sudo pip3 install SQLAlchemy
+...
+$ python3
+>>> import sqlalchemy
+>>> sqlalchemy.__version__ 
+'1.4.22'
+```
+
+Ignore any preceding error messages
