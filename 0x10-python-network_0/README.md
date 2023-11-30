@@ -17,4 +17,4 @@
 **Zeberio Morande**
 - [@morandezeb](https://twitter.com/morandezeb)
 - [GitHub - Zeberio](https://github.com/Zeb-0)
-- [Email Me]<mailto:morndezeb@gmal.com>
+- [Email Me](mailto:morndezeb@gmal.com)
